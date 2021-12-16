@@ -9,7 +9,7 @@ const inputDevice = '/dev/video0';
 
 const outputCodec = 'vp8';
 const outputRate = 30;
-const outputSizeRatio = 1; // n:1 (ex: 3=3:1, input 3840x1080 -> output 1280x360)
+const outputSizeRatio = 10; // n:1 (ex: 3=3:1, input 3840x1080 -> output 1280x360)
 const fileType = 'rtp';
 const fileName = 'rtp://localhost:8000';
 
