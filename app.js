@@ -1,10 +1,14 @@
 const relay = require('./relay.js');
-const ffmpeg = require('./ffmpeg.js');
+const ffmpeg_rtsp = require('./ffmpeg-rtsp.js');
+const ffmpeg_webrtc = require('./ffmpeg-webrtc.js');
 const janus = require('./janusGateway.js');
 const web = require('./webserver.js');
 
 const relayPort = 5000;
 const webPort = 8080;
+
+// RTSP:ffmpeg_rtsp, WebRTC:ffmpeg_webrtc
+var ffmpeg = ffmpeg_rtsp;
 
 relay.start(relayPort);
 ffmpeg.start();
