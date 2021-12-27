@@ -8,7 +8,7 @@ const relayPort = 5000;
 const webPort = 8080;
 
 // RTSP:ffmpeg_rtsp, WebRTC:ffmpeg_webrtc
-var useWebrtc = false;
+var useWebrtc = true;
 var ffmpeg = useWebrtc ? ffmpeg_webrtc : ffmpeg_rtsp;
 
 relay.start(relayPort);
